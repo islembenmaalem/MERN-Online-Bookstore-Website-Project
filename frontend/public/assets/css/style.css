@@ -1151,3 +1151,63 @@ ul.social_icon li a i:hover {
 .inner_page .footer {
      margin-top: 90px;
 }
+
+/*----- Popular Books Section
+--------------------------------------------------------------*/
+.tab-content {
+     position: relative;
+ }
+ [data-tab-content] {
+     opacity: 0;
+     visibility: hidden;
+     height: 0;
+     overflow: hidden;
+ }
+ .active[data-tab-content] {
+     opacity: 1;
+     visibility: visible;
+     height: auto;
+ }
+ .product-style button.add-to-cart {
+     background: #000;
+     color: #fff;
+     width: 70%;
+     text-transform: uppercase;
+     text-align: center;
+     line-height: 3;
+     position: absolute;
+     bottom: 200px;
+     left: 40px;
+     z-index: 9;
+     opacity: 0;
+     transition: 0.5s ease-out;
+ }
+ .product-style:hover button.add-to-cart {
+     bottom: 300px;
+     opacity: 1;
+ }
+ .tabs {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 55px 0; 
+     justify-content: center;
+     list-style: none;
+ }
+ .tabs .tab {
+     font-weight: 600;
+     color: #999;
+     margin-right: 50px;
+     cursor: pointer;
+ }
+ .tabs .tab.active,
+ .tabs .tab:hover {
+     color: #111;
+     border-bottom: 2px solid #9A884C;
+ }
+ img.books-image {  
+     /*height: 290px;*/
+     margin-right: 10px;
+     margin-bottom: 20px;
+     object-fit: cover;
+ }
+ 

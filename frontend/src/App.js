@@ -11,6 +11,7 @@ import B from './composants/B';
 import AfficheBooks from './composants/AfficheBooks';
 import Contact from './composants/Contact';
 import AddBook from './composants/AddBook';
+import PolpularBooks from './composants/PolpularBooks';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Route path="aa" element={<AfficheBooks/>}/>
       <Route path="admin" element={<AfficheBooks/>}/>
       <Route path="addBook" element={<AddBook/>}/>
+      <Route path="PolpularBooks" element={<PolpularBooks/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

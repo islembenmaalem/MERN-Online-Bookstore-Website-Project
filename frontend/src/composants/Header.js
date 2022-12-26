@@ -18,6 +18,8 @@ function createT() {
     {title="Contact"}
   if ( window.location.pathname==="/admin")
     {title="Admin"}
+  if ( window.location.pathname==="/PolpularBooks")
+    {title="Polpular Books"}
   return {
      __html: title  };
 }; 
@@ -53,6 +55,9 @@ function createT() {
                   <NavLink className="nav-link" to="">Home</NavLink>
                 </li>
                 <li className="nav-item">
+                  <NavLink className="nav-link" to="PolpularBooks">Polpular Books</NavLink>
+                </li>
+                <li className="nav-item">
                   <NavLink className="nav-link" to="about">About</NavLink>
                 </li>
                 <li className="nav-item">
@@ -66,7 +71,7 @@ function createT() {
                 </li>                
                 <li className="nav-item">
                   <NavLink className="nav-link" to="admin">Admin</NavLink>
-                </li>
+                </li>                
               </ul>
             </div>
             <ul className="search">

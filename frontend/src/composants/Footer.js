@@ -35,7 +35,7 @@ export default function Footer() {
         <h3>contact info</h3>
         <a href="#"> <i className="fas fa-phone" /> +123-456-7890 </a>
         <a href="#"> <i className="fas fa-phone" /> +111-222-3333 </a>
-        <a href="#"> <i className="fas fa-envelope" /> IslemampImen@gmail.com </a>
+        <a href="#"> <i className="fas fa-envelope" /> islembenmoallem0@gmail.com </a>
         <img src="assets/images/worldmap.png" className="map" alt="" />
       </div>
     </div>
