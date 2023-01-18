@@ -23,19 +23,12 @@ export default function Footer() {
         <NavLink to="Client"> <i className="fas fa-arrow-right" /> reviews </NavLink>
         <NavLink to="blog"> <i className="fas fa-arrow-right" /> blogs </NavLink>
       </div>
-      <div className="box">
-        <h3>extra links</h3>
-        <a href="#"> <i className="fas fa-arrow-right" /> account info </a>
-        <a href="#"> <i className="fas fa-arrow-right" /> ordered items </a>
-        <a href="#"> <i className="fas fa-arrow-right" /> privacy policy </a>
-        <a href="#"> <i className="fas fa-arrow-right" /> payment method </a>
-        <a href="#"> <i className="fas fa-arrow-right" /> our serivces </a>
-      </div>
+     
       <div className="box">
         <h3>contact info</h3>
         <a href="#"> <i className="fas fa-phone" /> +123-456-7890 </a>
         <a href="#"> <i className="fas fa-phone" /> +111-222-3333 </a>
-        <a href="#"> <i className="fas fa-envelope" /> islembenmoallem0@gmail.com </a>
+        <a href="#"> <i className="fas fa-envelope" /> mail.com </a>
         <img src="assets/images/worldmap.png" className="map" alt="" />
       </div>
     </div>

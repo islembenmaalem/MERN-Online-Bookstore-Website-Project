@@ -12,6 +12,7 @@ import AfficheBooks from './composants/AfficheBooks';
 import Contact from './composants/Contact';
 import AddBook from './composants/AddBook';
 import PolpularBooks from './composants/PolpularBooks';
+import ComfimAdmin from './ComfimAdmin';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path="addBook" element={<AddBook/>}/>
       <Route path="edit/:id" element={<AddBook/>}/>
       <Route path="PolpularBooks" element={<PolpularBooks/>}/>
+      <Route path="AdminLogin" element={<ComfimAdmin/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

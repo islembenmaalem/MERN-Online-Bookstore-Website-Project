@@ -71,7 +71,10 @@ function createT() {
                 </li>                
                 <li className="nav-item">
                   <NavLink className="nav-link" to="admin">Admin</NavLink>
-                </li>                
+                </li>  
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="AdminLogin">Login</NavLink>
+                </li>               
               </ul>
             </div>
             <ul className="search">

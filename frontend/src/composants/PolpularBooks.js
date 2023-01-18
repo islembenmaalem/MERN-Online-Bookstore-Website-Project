@@ -332,6 +332,7 @@ export default function PolpularBooks() {
         </div>{/*inner-tabs*/}
       </div>
     </div>
+    </section>
     <div className="row">
         <div className="col-sm-12">
           <div className="titlepage">
@@ -339,73 +340,72 @@ export default function PolpularBooks() {
           </div>
         </div>
       </div>
-  </section>
- <section id="special-offer" className="bookshelf">
- 
-  <div className="container">
-    <div className="row">
-      <div className="inner-content">	
   
-        <div className="product-list" data-aos="fade-up">
-          <div className="grid product-grid ">	
-          <div className="row">
-			
-            <figure className="product-style">
-              <img src="assets/images/product-item5.jpg" alt="Books" className="product-item" />
+
+<section id="popular-books" className="bookshelf">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          
+<div className="tab-content">
+            <div id="all-genre" data-tab-content className="active">
+              <div className="row">
+                <div className="col-md-3">
+                  <figure className="product-style">
+                  <img src="assets/images/product-item5.jpg" alt="Books" className="product-item" />
               <button type="button" className="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
               <figcaption>
                 <h3>Simple way of piece life</h3>
                 <p>Armor Ramsey</p>
-                <div className="item-price">
+                      <div className="item-price">
                   <span className="prev-price">$ 50.00</span>$ 40.00</div>
-              </figcaption>
-            </figure>
-            <figure className="product-style">
-              <img src="assets/images/product-item6.jpg" alt="Books" className="product-item" />
-              <button type="button" className="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
-              <figcaption>
-                <h3>Great travel at desert</h3>
-                <p>Sanchit Howdy</p>
-                <div className="item-price">
-                  <span className="prev-price">$ 30.00</span>$ 38.00</div>
-              </figcaption>
-            </figure>
-            <figure className="product-style">
-              <img src="assets/images/product-item7.jpg" alt="Books" className="product-item" />
+                    </figcaption>
+                  </figure>
+                </div>
+                <div className="col-md-3">
+                  <figure className="product-style">
+                  <img src="assets/images/product-item8.jpg" alt="Books" className="product-item" />
+                    <button type="button" className="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+                    <figcaption>
+                <h3>Once upon a time</h3>
+                <p>Klien Marry</p>
+                      <div className="item-price">
+                  <span className="prev-price">$ 25.00</span>$ 35.00</div>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div className="col-md-3">
+                  <figure className="product-style">
+                  <img src="assets/images/product-item7.jpg" alt="Books" className="product-item" />
               <button type="button" className="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
               <figcaption>
                 <h3>The lady beauty Scarlett</h3>
                 <p>Arthur Doyle</p>
-                <div className="item-price">
+                      <div className="item-price">
                   <span className="prev-price">$ 35.00</span>$ 45.00</div>
-              </figcaption>
-            </figure>
-            <figure className="product-style">
-              <img src="assets/images/product-item8.jpg" alt="Books" className="product-item" />
+                    </figcaption>
+                  </figure>
+                </div>
+                <div className="col-md-3">
+                  <figure className="product-style">
+                  <img src="assets/images/product-item6.jpg" alt="Books" className="product-item" />
               <button type="button" className="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
               <figcaption>
-                <h3>Once upon a time</h3>
-                <p>Klien Marry</p>
-                <div className="item-price">
-                  <span className="prev-price">$ 25.00</span>$ 35.00</div>
-              </figcaption>
-            </figure>
-            <figure className="product-style">
-              <img src="assets/images/product-item2.jpg" alt="Books" className="product-item" />
-              <button type="button" className="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
-              <figcaption>
-                <h3>Simple way of piece life</h3>
-                <p>Armor Ramsey</p>
-                <div className="item-price">$ 40.00</div>
-              </figcaption>
-            </figure>					
-          </div>{/*grid*/}
-          </div>
-          </div>
-      </div>{/*inner-content*/}
-    </div>
-  </div>
-</section>
+                <h3>Great travel at desert</h3>
+                <p>Sanchit Howdy</p>
+                      <div className="item-price">
+                  <span className="prev-price">$ 30.00</span>$ 38.00</div>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
 
 </div>
 

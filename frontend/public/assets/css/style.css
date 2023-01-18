@@ -290,7 +290,7 @@ button {
 
 /*-- header --*/
 
-.header {
+.header  {
      width: 100%;
      height: 90px;
      padding: 29px 20px;
@@ -968,7 +968,7 @@ ul.social_icon li a i:hover {
      font-size: 1rem;
      color:var(--black);
      padding:1rem 0;
-     padding-left: 5rem;
+     padding-left: 2rem;
 
  }
  
@@ -976,14 +976,14 @@ ul.social_icon li a i:hover {
      display: block;
      font-size: 1rem;
      color:var(--light-color);
-     padding:.2rem 0;
-     padding-left: 5rem;
+     padding:.1rem 0;
+     padding-left: 2rem;
 
  }
  
  .footer .box-container .box a i{
      color:#e77064;
-    padding-right: .5rem;
+    padding-right: 0rem;
  }
  
  .footer .box-container .box a:hover i{
@@ -1035,44 +1035,8 @@ ul.social_icon li a i:hover {
 
 /** endinner page css **/
 
-.inner_page .full_bg {
-     background-color: #e77064 !important;
-     background: transparent;
-}
 
-.back_re {
-     background-color: #423d31;
-}
 
-.back_re .title {
-     text-align: center;
-}
-
-.back_re .title h2 {
-     color: #fff;
-     font-size: 40px;
-     padding: 40px 0;
-     font-weight: 600;
-     text-transform: uppercase;
-     line-height: 35px;
-}
-
-.inner_page .titlepage h2::before {
-     background: inherit;
-}
-
-.margin_0 {
-     margin: 0 !important;
-}
-
-.inner_page .contact {
-     padding: 60px 0;
-     margin-top: 90px;
-}
-
-.inner_page .footer {
-     margin-top: 90px;
-}
 
 /*----- Popular Books Section
 --------------------------------------------------------------*/
@@ -1402,3 +1366,12 @@ ul.social_icon li a i:hover {
      width: 100%;
    }
  }
+
+ /*-- connect admin --*/
+ #connect{
+      
+margin-top: 5%;
+margin-bottom:5% ;
+margin-left: 40%;
+ }
+
