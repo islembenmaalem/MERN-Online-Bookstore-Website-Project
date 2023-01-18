@@ -101,8 +101,8 @@ function createT() {
                   <div className="build_box">
                   <h1>Books <span className="orang"> Collection </span></h1>
                   <h1> <span className="orang"> <div  className="orang" dangerouslySetInnerHTML={createT()} />  </span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                    <a className="read_more quote_btn" role="button">Get A Book</a>
+                    <p>Welcome to our online bookstore! We offer a wide selection of books for all ages and interests. </p>
+                    <NavLink className="read_more quote_btn" role="button"  to="PolpularBooks">Get A Book</NavLink>
                   </div>
                 </div>
               </div>
@@ -115,8 +115,8 @@ function createT() {
               <div className="row">
                 <div className="col-lg-8 col-md-9 ">
                   <div className="build_box">
-                    <h1>Wedding <span className="orang"> Couple</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <h1>Books <span className="orang">Collection</span></h1>
+                    <p>Welcome to our online bookstore! We offer a wide selection of books for all ages and interests. </p>
                     <a className="read_more quote_btn" role="button">Get A Quote</a>
                   </div>
                 </div>
@@ -130,8 +130,8 @@ function createT() {
               <div className="row">
                 <div className="col-lg-8 col-md-9 ">
                   <div className="build_box">
-                    <h1>Wedding <span className="orang"> Couple</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <h1>Books <span className="orang">Collection</span></h1>
+                    <p>Welcome to our online bookstore! We offer a wide selection of books for all ages and interests.</p>
                     <a className="read_more quote_btn"  role="button">Get A Quote</a>
                   </div>
                 </div>

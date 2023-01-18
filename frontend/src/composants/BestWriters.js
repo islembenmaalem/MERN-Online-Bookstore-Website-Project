@@ -18,36 +18,66 @@ export default function BestWriters() {
           <div className="brid text_align_center">
             <figure><img id="w1" src="assets/images/pic-1.png" alt="#" /></figure>
             <h3> Voluptate </h3>
-            <div className="social_icon">
-              <a href=""><i className="fa fa-facebook" /></a>
-              <a href=""><i className="fa fa-twitter" /></a>
-              <a href=""><i className="fa fa-instagram" /></a>
-              <a href=""><i className="fa fa-linkedin-square" /></a>
-            </div>
+            <div className="social-links">
+                      <ul>
+                      <li>
+                        </li>
+                        <li>
+                          <a href="#"><i className="icon icon-facebook" /></a>
+                        </li>
+                        <li>
+                          <a href="#"><i className="icon icon-twitter" /></a>
+                        </li>
+                        <li>  <a href=""><i className="icon icon-instagram" /></a></li>
+
+                        <li>  <a href=""><i className="icon icon-linkedin" /></a></li>
+
+                      </ul>
+                    </div>
           </div>
         </div>
         <div className="col-md-4 margin_top70">
           <div className="brid text_align_center">
             <figure><img id="w1" src="assets/images/ber_img1.jpg" alt="#" /></figure>
             <h3> Voluptate </h3>
-            <div className="social_icon">
-              <a href=""><i className="fa fa-facebook" /></a>
-              <a href=")"><i className="fa fa-twitter" /></a>
-              <a href=""><i className="fa fa-instagram" /></a>
-              <a href=""><i className="fa fa-linkedin-square" /></a>
-            </div>
+            <div className="social-links">
+                      <ul>
+                      <li>
+                        </li>
+                        <li>
+                          <a href="#"><i className="icon icon-facebook" /></a>
+                        </li>
+                        <li>
+                          <a href="#"><i className="icon icon-twitter" /></a>
+                        </li>
+                        <li>  <a href=""><i className="icon icon-instagram" /></a></li>
+
+                        <li>  <a href=""><i className="icon icon-linkedin" /></a></li>
+
+                      </ul>
+                    </div>
           </div>
         </div>
         <div className="col-md-4">
           <div className="brid text_align_center">
             <figure><img id="w1" src="assets/images/ber_img2.jpg" alt="#" /></figure>
             <h3> Voluptate </h3>
-            <div className="social_icon">
-              <a href=""><i className="fa fa-facebook" /></a>
-              <a href=""><i className="fa fa-twitter" /></a>
-              <a href=""><i className="fa fa-instagram" /></a>
-              <a href=""><i className="fa fa-linkedin-square" /></a>
-            </div>
+            <div className="social-links">
+                      <ul>
+                      <li>
+                        </li>
+                        <li>
+                          <a href="#"><i className="icon icon-facebook" /></a>
+                        </li>
+                        <li>
+                          <a href="#"><i className="icon icon-twitter" /></a>
+                        </li>
+                        <li>  <a href=""><i className="icon icon-instagram" /></a></li>
+
+                        <li>  <a href=""><i className="icon icon-linkedin" /></a></li>
+
+                      </ul>
+                    </div>
           </div>
         </div>
       </div>

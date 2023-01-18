@@ -31,6 +31,7 @@ function App() {
       <Route path="aa" element={<AfficheBooks/>}/>
       <Route path="admin" element={<AfficheBooks/>}/>
       <Route path="addBook" element={<AddBook/>}/>
+      <Route path="edit/:id" element={<AddBook/>}/>
       <Route path="PolpularBooks" element={<PolpularBooks/>}/>
       </Routes>
       <Footer/>

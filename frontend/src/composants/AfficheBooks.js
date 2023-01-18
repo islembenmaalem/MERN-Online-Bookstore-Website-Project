@@ -55,7 +55,9 @@ let s=0
   navigate('/AddBook/')
 }    
  //<div style={{margin:50}}><br/><button style={{marginLeft:50,marginBottom:15}} className="btn btn-primary">Add</button>  
-
+ const navigateToedit=(id)=>{
+  navigate('/edit/'+id)
+}
   return (
 
 <div style={{margin:50}}><br/><button style={{marginLeft:50,marginBottom:15}} className="btn btn-primary" onClick={()=>navigateTo()}>Add</button>  
@@ -91,7 +93,7 @@ let s=0
                            <td>{c.Bpays}</td>
 
                            <td><button className="btn btn-outline-danger" onClick={()=>deletec(c._id)}>delete</button></td>
-                           <td><button className="btn btn-outline-info"> edit</button></td>
+                           <td><button className="btn btn-outline-info" onClick={()=>navigateToedit(c._id)}> edit</button></td>
                            </tr>))}
                            
   </tbody>

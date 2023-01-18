@@ -46,7 +46,7 @@ export default function Footer() {
       <a href="#" className="fab fa-linkedin" />
       <a href="#" className="fab fa-pinterest" />
     </div>
-    <div className="credit"> created by <span>Islem Ben Maalem </span> | all rights reserved! </div>
+    <div className="credit"> created by <span>Islem Ben Maalem</span> | all rights reserved! </div>
   </section>
 </div>
 
