@@ -3,6 +3,7 @@ import { useParams,useNavigate } from 'react-router-dom';
 import axios from "axios";
 
 export default function AddBook() {
+  const [books, setBooks] = useState([]);
     const [Bprix,setBprix]= useState("");
     const [BDate,setBDate]= useState("");
     const [BNom,setBNom]= useState("");
@@ -14,7 +15,33 @@ export default function AddBook() {
     const [title,setTitle]= useState("");
     const params=useParams(); //yekho parametre mel fou9
     const navigate=useNavigate()
-    
+    const baseURL ="http://localhost:3006/books"
+
+    useEffect(() => { 
+     
+      axios.get(baseURL).then(res => {
+       //  console.log("res data",res.data)
+
+         setBooks(res.data)
+     }).catch(err=>console.log(err))
+   //  console.log("book : " ,books)
+
+   for (let i = 0; i < books.length; i++) {
+    if (books[i]._id==params.id){
+    setBgenre(books[i].Bgenre)
+     setBNom(books[i].BNom)
+     setBauteur(books[i].Bauteur)
+     setBDate(books[i].BDate)
+     setBpays(books[i].Bpays)
+     setBprix(books[i].Bprix)
+     setBlangue(books[i].Blangue)
+    // console.log(books)
+
+    }
+   }
+   }                       
+   , [])
+
     useEffect(()=>{
         if (params.id) {
           setTitle("edit")
@@ -23,30 +50,65 @@ export default function AddBook() {
           setTitle("add");
           
         }
+       
       },[])
       const navigateTo=()=>{
        navigate('/admin/')
      }  
-      const handClick = () =>{
+      const handClick = (event) =>{
+        setBpays(event.target.value)
+
+        if(params.id){
+           let data={
+            Blangue:Blangue,
+            Bgenre:Bgenre,
+             _id:params.id,
+            BNom :BNom,
+            BDate: BDate,
+            Bprix:parseInt(Bprix),
+            Bpays:Bpays,
+             Bauteur:Bauteur,
+            
+                    }
+           
+          axios.put('http://localhost:3006/books/'+params.id, data)
+          .then(response => this.setState({ updatedAt: response.data.updatedAt }));
+
+
+
+           axios.get(baseURL).then(res => {
+            setBooks(res.data)
+        }).catch(err=>console.log(err))
+         
+
+                navigate('/admin/')
     
-                  let data={
-                    BNom :BNom,
-                    BDate: BDate,
-                    Bprix:parseInt(Bprix),
-                    Bpays:Bpays,
-                     Bauteur:Bauteur,
-                    Blangue:Blangue,
-                    Bgenre:Bgenre
-                            }
+       
                 
-        axios.post('http://localhost:3006/books/', data)
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-        navigate('/admin/')
+                                       
+        }
+    else{
+      let data={
+        BNom :BNom,
+        BDate: BDate,
+        Bprix:parseInt(Bprix),
+        Bpays:Bpays,
+         Bauteur:Bauteur,
+        Blangue:Blangue,
+        Bgenre:Bgenre
+                }
+    
+ axios.post('http://localhost:3006/books/', data)
+.then(function (response) {
+console.log(response);
+})
+.catch(function (error) {
+console.log(error);
+});
+
+navigate('/admin/')
+    }
+                
 
         
             };
@@ -80,25 +142,25 @@ export default function AddBook() {
         <div className="col-lg-12">
           <form action="#">
             <div className="form-group">
-              <input type="text" className="form-control" placeholder="BNom" value={BNom} onChange={(e)=>setBNom(e.target.value)}/>
+              <input type="text" className="form-control" placeholder="Nom" value={BNom} onChange={(e)=>setBNom(e.target.value)}/>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" placeholder="BDate" value={BDate} onChange={changeBDate}/>
+              <input type="text" className="form-control" placeholder="Date" value={BDate} onChange={changeBDate}/>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" placeholder="Bprix"value={Bprix} onChange={changeBprix}/>
+              <input type="text" className="form-control" placeholder="prix"value={Bprix} onChange={changeBprix}/>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" placeholder="Bpays"value={Bpays} onChange={changeBpays}/>
+              <input type="text" className="form-control" placeholder="pays"value={Bpays} onChange={changeBpays}/>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" placeholder="Bauteur"value={Bauteur} onChange={changeBauteur}/>
+              <input type="text" className="form-control" placeholder="auteur"value={Bauteur} onChange={changeBauteur}/>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" placeholder="Blangue"value={Blangue} onChange={changeBlangue}/>
+              <input type="text" className="form-control" placeholder="langue"value={Blangue} onChange={changeBlangue}/>
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" placeholder="Bgenre"value={Bgenre} onChange={changeBgenre}/>
+              <input type="text" className="form-control" placeholder="genre"value={Bgenre} onChange={changeBgenre}/>
             </div>
             
             <div className="form-group">

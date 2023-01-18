@@ -38,7 +38,7 @@ export default function AfficheBooks() {
         
         axios.delete('http://localhost:3006/books/'+id).catch(err=>console.log("erreuerrrr   ",err))
         axios.get(baseURL).then(res => {
-          console.log("res data",res.data)
+          //console.log("res data",res.data)
           setBooks(res.data)
       }).catch(err=>console.log(err))
         
@@ -72,8 +72,7 @@ let s=0
                     <th scope="col">nom de lauteur</th>
                     <th scope="col">langue</th>
                     <th scope="col">prix</th>
-                    <th scope="col">genre</th>
-                    <th scope="col">Pays</th>
+                    
                     <th scope="col">Actions</th>
                     <th scope="col"></th>
     </tr>
@@ -89,8 +88,7 @@ let s=0
                            <td>{c.Bauteur}</td>
                            <td>{c.Blangue}</td>
                            <td>{c.Bprix}</td>
-                           <td>{c.Bgenre}</td>
-                           <td>{c.Bpays}</td>
+                           
 
                            <td><button className="btn btn-outline-danger" onClick={()=>deletec(c._id)}>delete</button></td>
                            <td><button className="btn btn-outline-info" onClick={()=>navigateToedit(c._id)}> edit</button></td>
