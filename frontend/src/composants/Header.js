@@ -69,17 +69,16 @@ function createT() {
                 <li className="nav-item">
                   <NavLink className="nav-link" to="Contact">Contact Us</NavLink>
                 </li>                
+                
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="admin">Admin</NavLink>
-                </li>  
+                  <NavLink className="nav-link" to="AdminLogin">Admin</NavLink>
+                </li>   
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="AdminLogin">Login</NavLink>
-                </li>               
+                  <NavLink className="nav-link" to="Signup">Sing up</NavLink>
+                </li>             
               </ul>
             </div>
-            <ul className="search">
-              <li><a ><i className="fa fa-search" aria-hidden="true" /></a></li>
-            </ul>
+            
           </nav>
         </div>
       </div>
