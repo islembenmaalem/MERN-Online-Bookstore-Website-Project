@@ -14,13 +14,19 @@
 - View book details, including author, price, and description
 - Add books to the shopping cart
 - Manage the shopping cart (add, remove, update items)
-- Admin panel for book management 
+- Admin panel for book management
 - Responsive design for mobile and desktop
 
 **How to Run**:
 
-1. **Backend Server**:
-   - Open a terminal and navigate to the `backend` directory.
+1. **Clone the Repository**:
+   - Open a terminal and run the following command to clone the repository:
+     ```bash
+     git clone https://github.com/islembenmaalem/MERN-Online-Bookstore-Website-Project
+     ```
+
+2. **Backend Server**:
+   - Navigate to the `backend` directory.
    - Install backend dependencies.
      ```bash
      npm install
@@ -30,7 +36,7 @@
      node app
      ```
 
-2. **Frontend Server**:
+3. **Frontend Server**:
    - Open a new terminal and navigate to the `frontend` directory.
    - Install frontend dependencies.
      ```bash
@@ -41,4 +47,4 @@
      npm start
      ```
 
-3. Open your web browser and visit `http://localhost:3000` to access the MERN Online Bookstore.
+4. Open your web browser and visit `http://localhost:3000` to access the MERN Online Bookstore.
