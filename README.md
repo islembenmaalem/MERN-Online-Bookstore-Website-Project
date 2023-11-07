@@ -17,3 +17,28 @@
 - Admin panel for book management 
 - Responsive design for mobile and desktop
 
+**How to Run**:
+
+1. **Backend Server**:
+   - Open a terminal and navigate to the `backend` directory.
+   - Install backend dependencies.
+     ```bash
+     npm install
+     ```
+   - Start the backend server.
+     ```bash
+     node app
+     ```
+
+2. **Frontend Server**:
+   - Open a new terminal and navigate to the `frontend` directory.
+   - Install frontend dependencies.
+     ```bash
+     npm install
+     ```
+   - Start the frontend server.
+     ```bash
+     npm start
+     ```
+
+3. Open your web browser and visit `http://localhost:3000` to access the MERN Online Bookstore.
